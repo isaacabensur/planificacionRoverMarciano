@@ -1,6 +1,6 @@
 (define (problem roverprob1234)
 (:domain Rover)
-
+; Aqui empieza el objetivo
 (:objects
     general - Lander
     colour high_res low_res - Mode
