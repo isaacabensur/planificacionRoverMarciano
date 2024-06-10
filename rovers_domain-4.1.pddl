@@ -70,6 +70,7 @@
               :precondition (and (can_traverse ?x ?y ?z) (available ?x) (at ?x ?y) (visible ?y ?z) (battery_low ?x))
               :effect (and (not (at ?x ?y)) (at ?x ?z)
                      (not (battery_low ?x))
+                     (battery_not_full ?x)
               )
        )
 
