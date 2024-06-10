@@ -1,5 +1,5 @@
 (define (problem roverprob4)
-	(:domain RoverWithBattery)
+	(:domain roverwithbattery)
 	(:objects
 		general - Lander
 		colour high_res low_res - Mode

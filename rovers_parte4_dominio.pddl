@@ -30,10 +30,14 @@
               (calibration_target ?i - camera ?o - objective)
               (on_board ?i - camera ?r - rover)
               (channel_free ?l - lander)
+
+              ;; Estados de la bateria de acuerdo a su nivel
               (battery_full ?r - rover)
               (battery_high ?r - rover)
               (battery_medium ?r - rover)
               (battery_low ?r - rover)
+
+              ;; Estado para identificar que la bateria no esta llena
               (battery_not_full ?r - rover)
        )
 
@@ -70,7 +74,7 @@
               :precondition (and (can_traverse ?x ?y ?z) (available ?x) (at ?x ?y) (visible ?y ?z) (battery_low ?x))
               :effect (and (not (at ?x ?y)) (at ?x ?z)
                      (not (battery_low ?x))
-                     (battery_not_full ?x)
+                     (battery_not_full ?x) ; La bateria no esta llena
               )
        )
 
