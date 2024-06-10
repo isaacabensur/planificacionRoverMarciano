@@ -25,9 +25,9 @@
 		(visible waypoint3 waypoint2)
 		(visible waypoint2 waypoint3)
 
-		; se añade la visibilidad del waypoint1 desde el waypoint4
+		; se anade la visibilidad del waypoint1 desde el waypoint4
 		(visible waypoint4 waypoint1)
-		; se añade la visibilidad del waypoint4 desde el waypoint1
+		; se anade la visibilidad del waypoint4 desde el waypoint1
 		(visible waypoint1 waypoint4)
 		(at_soil_sample waypoint0)
 		(at_rock_sample waypoint1)
@@ -51,10 +51,10 @@
 		(can_traverse rover0 waypoint1 waypoint2)
 		(can_traverse rover0 waypoint2 waypoint1)
 
-		; se añade la capacidad de moverse del rover0 entre el waypoint4 y el waypoint1
+		; se anade la capacidad de moverse del rover0 entre el waypoint4 y el waypoint1
 		(can_traverse rover0 waypoint1 waypoint4)
 
-		; se añade la capacidad de moverse del rover0 entre el waypoint1 y el waypoint4
+		; se anade la capacidad de moverse del rover0 entre el waypoint1 y el waypoint4
 		(can_traverse rover0 waypoint4 waypoint1)
 		(on_board camera0 rover0)
 		(calibration_target camera0 objective1)
@@ -69,7 +69,7 @@
 		(visible_from objective1 waypoint2)
 		(visible_from objective1 waypoint3)
 
-		; se añade la visibilidad del objective2 desde el waypoint4
+		; se anade la visibilidad del objective2 desde el waypoint4
 		(visible_from objective2 waypoint4)
 	)
 
@@ -79,7 +79,7 @@
 			(communicated_rock_data waypoint3)
 			(communicated_image_data objective1 high_res)
 
-			; se añade la comunicación de la imagen de alta resolución y color del objective2
+			; se anade la comunicacion de la imagen de alta resolucion y color del objective2
 			(have_image rover0 objective2 high_res)
 			(have_image rover0 objective2 colour)
 		)
