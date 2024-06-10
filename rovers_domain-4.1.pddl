@@ -69,7 +69,7 @@
               :parameters (?x - rover ?y - waypoint ?z - waypoint)
               :precondition (and (can_traverse ?x ?y ?z) (available ?x) (at ?x ?y) (visible ?y ?z) (battery_low ?x))
               :effect (and (not (at ?x ?y)) (at ?x ?z)
-                     (not (battery_low ?x)) ;; Aqui podrías definir una bateria agotada si fuese necesario
+                     (not (battery_low ?x))
               )
        )
 

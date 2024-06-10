@@ -56,8 +56,8 @@
 		(visible_from objective1 waypoint2)
 		(visible_from objective1 waypoint3)
 
-		;; Estado inicial de la bateria
-		(battery_full rover0)
+		;; estado inicial de la bateria
+		(battery_low rover0)
 		(not (battery_not_full rover0))
 	)
 
