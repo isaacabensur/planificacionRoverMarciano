@@ -5,10 +5,10 @@
 		colour high_res low_res - Mode
 		rover0 - Rover
 		rover0store - Store
-		; se crea el waypoint4
+		;Se anade una nueva ubicacion como lo indica la cuestion, se crea el waypoint4
 		waypoint0 waypoint1 waypoint2 waypoint3 waypoint4 - Waypoint
 		camera0 - Camera
-		; se crea el objective2
+		; Luego se crea el objective2
 		objective0 objective1 objective2 - Objective
 	)
 	(:init
@@ -25,9 +25,9 @@
 		(visible waypoint3 waypoint2)
 		(visible waypoint2 waypoint3)
 
-		; se anade la visibilidad del waypoint1 desde el waypoint4
+		; se anade la visibilidad del waypoint1 desde el waypoint4 para poder incluir al objetivo dentro de las condiciones iniciales
 		(visible waypoint4 waypoint1)
-		; se anade la visibilidad del waypoint4 desde el waypoint1
+		; se anade la visibilidad del waypoint4 desde el waypoint1 poder incluir al objetivo dentro de las condiciones iniciales
 		(visible waypoint1 waypoint4)
 		(at_soil_sample waypoint0)
 		(at_rock_sample waypoint1)
